@@ -1,5 +1,12 @@
 // Assignment Code
+
 var generateBtn = document.querySelector("#generate");
+// Declare 4 types of input variables
+var alphaLowerCaseStr = ""
+var alphaUpperCaseStr = ""
+var numbersStr =""
+var specialCharactersStr = ""
+
 
 // Write password to the #password input
 function writePassword() {
