@@ -66,7 +66,7 @@ function generatePassword(){
   }
   console.log("Specials:", hasSpecials);
 
-  console.log("After 4 charcter type Questions:", passwordCharacters); //passwordCharacters now contains of ALL possible characters that can be in user password
+  console.log("After 4 charcter type Questions:", passwordCharacters); //passwordCharacters now contains ALL possible characters that can be in user password
 
   for (var i = 0; i < totalCharacters; i++) {
     var randomNum = Math.floor(Math.random() * passwordCharacters.length)
