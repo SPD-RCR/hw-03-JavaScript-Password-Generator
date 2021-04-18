@@ -95,7 +95,7 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 ```
 
-- Verify at least 2 characters in password are from each user defined character types
+- Possibly -- Verify at least 2 characters in password are from each user defined character types
 - Possibly -- Verify password does Not list a character from the same character type as the character listed before it (To avoid grouping of similar character types)
 
 ```
