@@ -1,5 +1,3 @@
-
-
 // Assignment Code
 var generateBtn = document.querySelector('#generate');
 
@@ -15,7 +13,7 @@ var password = "";
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector('#password');
-  console.log("After WritePassword:", password);
+  //console.log("After WritePassword:", password);
   passwordText.value = password;
 }
 // Add event listener to generate button
@@ -32,7 +30,7 @@ function generatePassword(){
     alert("Please enter a number between 8 - 128!");
     return generatePassword()
   }
-  console.log("User chosen number of characters in password:", totalCharacters)
+  //console.log("User chosen number of characters in password:", totalCharacters)
 
   //ask the user if they want to include UPPER case letters, lower case letters, numbers, and/or special characters? 
   //MUST pick at least 1 type of characters.
@@ -49,30 +47,30 @@ function generatePassword(){
   if(hasUpperCase){
     passwordCharacters += upperCaseStr
   }
-  console.log("UPPER case:", hasUpperCase);
+  //console.log("UPPER case:", hasUpperCase);
 
   if(hasLowerCase){
     passwordCharacters += lowerCaseStr
   }
-  console.log("Lower case:", hasLowerCase);
+  //console.log("Lower case:", hasLowerCase);
 
   if(hasNumbers) {
     passwordCharacters += numbersStr
   }
-  console.log("Numbers:", hasNumbers);
+  //console.log("Numbers:", hasNumbers);
 
   if(hasSpecials) {
     passwordCharacters += specialsStr
   }
-  console.log("Specials:", hasSpecials);
+  //console.log("Specials:", hasSpecials);
 
-  console.log("After 4 charcter type Questions:", passwordCharacters); //passwordCharacters now contains ALL possible characters that can be in user password
+  //console.log("After 4 charcter type Questions:", passwordCharacters); //passwordCharacters now contains ALL possible characters that can be in user password
 
   for (var i = 0; i < totalCharacters; i++) {
     var randomNum = Math.floor(Math.random() * passwordCharacters.length)
     var randomCharacters = passwordCharacters[randomNum]
     password = password + randomCharacters
   }
-  console.log("After users number of Randoms are picked: ", password)
+  //console.log("After users number of Randoms are picked: ", password)
   return password;
 }
